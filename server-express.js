@@ -1,5 +1,5 @@
 const express = require("express");     // include express.js
-const path = require("path");           // include path.js
+const path = require("path");           // include path.js which is used in line 24
 
 const complements = [
   "You like nice today",
