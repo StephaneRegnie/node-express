@@ -13,7 +13,7 @@ const compliments = [
   "You've learned a lot of things, and that's pretty hard to do"
 ];
 
-function getRandomComplement() {    // returns a random item from the compliments array
+function getRandomCompliment() {    // returns a random item from the compliments array
   const randomIndex = Math.floor(Math.random() * compliments.length);
   return compliments[randomIndex];
 }
@@ -27,7 +27,7 @@ app.get("/", function(req, res) {     // app.get(url, callback); is how you hand
 app.get("/complement", function(req, res) {     // /complement route will responds to the request with a JSON object
   res
     .json({
-      complement: getRandomComplement()
+      complement: getRandomCompliment()
     })
     .end();
 });
