@@ -1,7 +1,7 @@
 const express = require("express");     // include express.js
 const path = require("path");           // include path.js which is used line 24
 
-const complements = [
+const compliments = [
   "You like nice today",
   "That dress looks nice on you",
   "Have you been working out?",
@@ -13,9 +13,9 @@ const complements = [
   "You've learned a lot of things, and that's pretty hard to do"
 ];
 
-function getRandomComplement() {    // returns a random item from the complements array
-  const randomIndex = Math.floor(Math.random() * complements.length);
-  return complements[randomIndex];
+function getRandomComplement() {    // returns a random item from the compliments array
+  const randomIndex = Math.floor(Math.random() * compliments.length);
+  return compliments[randomIndex];
 }
 
 const app = express();    // create a new server.
